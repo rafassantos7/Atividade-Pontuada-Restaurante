@@ -22,6 +22,7 @@ function ListaDePratos() {
         }
         carregarPratos()
     }, [])
+
     return (
         <div className="container-image">
         <nav className="navbar">
@@ -41,18 +42,14 @@ function ListaDePratos() {
                 <li>Nenhum prato encontrado.</li>
             ) : (
                 pratos.map( prato => (
-                    <li key={prato.id} className="prato-item">
-            <strong>Nome: </strong> {prato.nomeprato}<br />
-            <strong>Descrição: </strong> {prato.descricao}<br />
-            <strong>Preço: </strong> {prato.preco}<br />
-            <strong>Disponibilidade: </strong> {prato.disponibilidade}<br />
-            <strong>Categoria: </strong> {prato.categoria}<br />
-            <img 
-    src={prato.url} 
-    alt="Imagem do prato" 
-    className="image-prato"
-/>
-         </li>
+                    <li key={prato.id}>
+                        <strong>Nome: </strong> {prato.nomeprato}<br />
+                        <strong>Descrição: </strong> {prato.descricao}<br />
+                        <strong>Preço: </strong> {prato.preco}<i> R$</i><br />
+                        <strong>Disponibilidade: </strong> {prato.disponibilidade}<br />
+                        <strong>Categoria: </strong> {prato.categoria}<br />
+                        <strong>URL: </strong> {prato.url}<br />
+                    </li>
                 ))
             )}
         </ul>
