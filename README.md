@@ -1,4 +1,4 @@
-# Atividade Pontuada — Restaurante (Trabalho em Dupla)
+# Atividade Pontuada — Restaurante
 
 Este repositório contém a implementação da atividade acadêmica "Restaurante" — um sistema para gerenciar mesas, cardápio e pedidos. Este README serve como documentação inicial para executar, testar e contribuir no projeto.
 
